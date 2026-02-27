@@ -71,3 +71,4 @@ A branch `main` representa sempre a versão mais estável e atual do sistema.
 | <img src="https://github.com/GabrielRocha-27.png?size=50" width="50">   |   [Gabriel Rocha](https://github.com/GabrielRocha-27)   |   Dev. Team   |
 | <img src="https://github.com/gabrielnunes926.png?size=50" width="50">   |   [Gabriel Nunes](https://github.com/gabrielnunes926)   |   Dev. Team   |
 | <img src="https://github.com/joaosantos13.png?size=50" width="50">      |     [João Santos](https://github.com/joaosantos13)      |   Dev. Team   |
+| <img src="https://github.com/maria-oliveira.png?size=50" width="50">    |   [Maria Oliveira](https://github.com/maria-oliveira)   |   Dev. Team   |
