@@ -7,6 +7,7 @@
   <a href ="#sprint"> Cronograma de Sprints</a>  |
   <a href ="#tecnologias">Tecnologias</a> |
   <a href ="#estrutura">Estrutura do Projeto</a> |
+  <a href ="#docs">Documentação</a> |
   <a href ="#equipe"> Equipe</a> |
 </p>
 
@@ -29,12 +30,11 @@ Desenvolvimento de uma aplicação Web utilizando **Java** no back-end para digi
 | **US03** | Alta | Como administrador, desejo cadastrar viaturas para manter a frota atualizada no sistema. | 13 | 2 | 📅 |
 | **US04** | Alta | Como administrador, desejo cadastrar técnicos para que eles possam acessar o sistema e realizar apontamentos. | 8 | 2 | 📅 |
 | **US05** | Alta | Como administrador, desejo validar a quilometragem inserida para garantir a integridade dos dados. | 13 | 2 | 📅 |
-| **US07** | Média | Como administrador, desejo visualizar um Dashboard de consumo para monitorar a eficiência da frota. | 20 | 2 | 📅 |
-| **US08** | Média | Como administrador, desejo visualizar o histórico de abastecimentos para conferência de dados. | 8 | 3 | 📅 |
-| **US09** | Alta | Como usuário (Admin/Técnico), gostaria de ter acesso por login para garantir a segurança das informações. | 13 | 3 | 📅 |
-| **US10** | Média | Como técnico, desejo visualizar e editar os registros de abastecimentos realizados por mim. | 13 | 3 | 📅 |
-| **US11** | Baixa | Como administrador, desejo filtrar os gastos por tipo de veículo (Utilitário vs Passeio) para análise de custos. | 13 | 3 | 📅 |
-| **US12** | Baixa | Como administrador, desejo receber notificações referente a manutenções preventivas de viaturas. | 13 | 3 | 📅 |
+| **US06** | Média | Como administrador, desejo visualizar um Dashboard de consumo para monitorar a eficiência da frota. | 20 | 2 | 📅 |
+| **US07** | Média | Como administrador, desejo visualizar o histórico de abastecimentos para conferência de dados. | 8 | 3 | 📅 |
+| **US08** | Média | Como técnico, desejo visualizar e editar os registros de abastecimentos realizados por mim. | 13 | 3 | 📅 |
+| **US09** | Baixa | Como administrador, desejo filtrar os gastos por tipo de veículo (Utilitário vs Passeio) para análise de custos. | 13 | 3 | 📅 |
+| **US10** | Baixa | Como administrador, desejo receber notificações referente a manutenções preventivas de viaturas. | 13 | 3 | 📅 |
 
 ---
 
@@ -42,9 +42,9 @@ Desenvolvimento de uma aplicação Web utilizando **Java** no back-end para digi
 
 |   Sprint    | Início |  Fim  | Documentação | Status | 
 | :---------: | :----: | :---: | :----------: | :----: |
-| 🔖 Sprint 1 | 16/03  | 05/04 |  [Sprint 1](./documentacao/processo/sprints/sprint1/README.md)            |  Em Andamento ⚙️  |
-| 🔖 Sprint 2 | 13/04  | 03/05 |   [Sprint 2](./documentacao/processo/sprints/sprint2/README.md)           |  Planejada 📅      |
-| 🔖 Sprint 3 | 11/05  | 31/05 |   [Sprint 3](./documentacao/processo/sprints/sprint3/README.md)            |  Planejada 📅     |
+| 🔖 Sprint 1 | 16/03  | 05/04 |  [Sprint 1](./Documentacao/Processo/Sprints/Sprint1/README.md)            |  Em Andamento ⚙️  |
+| 🔖 Sprint 2 | 13/04  | 03/05 |   [Sprint 2](./Documentacao/Processo/Sprints/Sprint1/README.md)           |  Planejada 📅      |
+| 🔖 Sprint 3 | 11/05  | 31/05 |   [Sprint 3](./Documentacao/Processo/Sprints/Sprint1/README.md)            |  Planejada 📅     |
 
 ---
 ## 💻 Tecnologias <a id="tecnologias"></a>
@@ -65,8 +65,8 @@ Em Construção.
 
 ## 📂 Documentação <a id="docs"></a>
 
-* 📑 [**Checklist DoR & DoD**](./docs/governanca/README.md#checklist) - Critérios de início e conclusão de tarefas.
-* 🌳 [**Estratégia de Branch & Commits**](./docs/governanca/README.md#estrategia) - Fluxo de trabalho no GitHub.
+* 📑 [**Checklist DoR & DoD**](./Documentacao/Processo/Checklist/README.md) - Critérios de início e conclusão de tarefas.
+* 🌳 [**Estratégia de Branch & Commits**](./Documentacao/Governanca/README.md) - Fluxo de trabalho no GitHub.
 
 ## Equipe
 | Foto                                                                    |                          Nome                           |    Função     |

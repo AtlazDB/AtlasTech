@@ -9,33 +9,72 @@
   | <a href ="#desafio"> Desafio</a>  |
   <a href ="#us"> User Stories</a>  |   
   <a href ="#dor">DoR</a>  |
-  <a href ="#dod">DoD</a>  |
 </p>
 
 > Status da Sprint: Planejada 📅
 
+---
+
 ## 🏅 Desafio <a id="desafio"></a>
-Finalizar o ecossistema do projeto com a implementação de segurança (Autenticação e Autorização), permitindo que técnicos e administradores tenham acessos restritos. Também serão entregues os filtros por tipo de veículo e os alertas de manutenção preventiva sugeridos pelo cliente.
+Finalizar o ecossistema do projeto com foco em segurança e governança de dados. O desafio desta etapa é implementar o controle de acesso (Autenticação e Autorização), permitir a rastreabilidade através do histórico de lançamentos e automatizar os alertas de manutenção preventiva (como a troca de óleo prevista no boletim físico), transformando dados brutos em inteligência operacional.
 
-## 📋 User Stories <a id="us"></a>
+---
 
-| ID | Prioridade | User Story | Est. (h) | Sprint | Status |
-| :--: | :---: | --- | :---: | :---: | :---: |
-| **US08** | Média | Como administrador, desejo visualizar o histórico de abastecimentos para conferência de dados. | 8 | 3 | 📅 |
-| **US09** | Alta | Como usuário (Admin/Técnico), gostaria de ter acesso por login para garantir a segurança das informações. | 13 | 3 | 📅 |
-| **US10** | Média | Como técnico, desejo visualizar e editar os registros de abastecimentos realizados por mim. | 13 | 3 | 📅 |
-| **US11** | Baixa | Como administrador, desejo filtrar os gastos por tipo de veículo (Utilitário vs Passeio) para análise de custos. | 13 | 3 | 📅 |
-| **US12** | Baixa | Como administrador, desejo receber notificações referente a manutenções preventivas de viaturas. | 13 | 3 | 📅 |
+## 📋 User Stories & DoD <a id="us"></a>
 
-## 🏅 DoR - Definition of Ready <a id="dor"></a>
-| Critério | Descrição |
-| :---: | --- |
-| Segurança | Definição de perfis de acesso (Role-Based Access Control). |
-| Backend | Configuração do Spring Security e JWT. |
+Nesta seção, detalhamos as histórias de usuário e seus respectivos **DoD (Definition of Done)** específicos.
 
-## 🏆 DoD - Definition of Done <a id="dod"></a>
-| Critério | Descrição |
-| :---: | --- |
-| Segurança | Usuários técnicos não acessam telas de cadastro de viaturas ou dashboard global. |
-| Alertas | Sistema exibe notificação visual quando a viatura atinge o KM de revisão. | 
+### **US07 - Histórico Administrativo**
+> **Como administrador, desejo visualizar o histórico de abastecimentos para conferência de dados.**
 
+* **Prioridade:** Média | **Estimativa:** 8h | **Status:** 📅
+* **DoD (Critérios de Sucesso):**
+    * Tela de listagem global com todos os apontamentos realizados.
+    * Funcionalidade de ordenação por data e filtros por técnico ou viatura.
+    * Visualização detalhada de cada registro (Km, litros, valor e nota fiscal).
+
+### **US08 - Autogestão do Técnico**
+> **Como técnico, desejo visualizar e editar os registros realizados por mim para correção de eventuais erros.**
+
+* **Prioridade:** Média | **Estimativa:** 13h | **Status:** 📅
+* **DoD (Critérios de Sucesso):**
+    * Interface de "Meus Lançamentos" restrita aos dados inseridos pelo usuário logado.
+    * Permissão de edição liberada apenas enquanto o registro não for exportado para o SGI.
+    * Garantia de que um técnico não consiga visualizar ou alterar dados de outros colegas.
+
+### **US09 - Análise por Categoria de Frota**
+> **Como administrador, desejo filtrar os gastos por tipo de veículo (Utilitário vs Passeio) para análise de custos.**
+
+* **Prioridade:** Baixa | **Estimativa:** 13h | **Status:** 📅
+* **DoD (Critérios de Sucesso):**
+    * Inclusão do campo "Tipo de Veículo" no cadastro de viaturas.
+    * Filtro dinâmico no Dashboard que segrega custos e consumo médio por categoria.
+    * Relatório de exportação refletindo a categoria do veículo para o SGI.
+
+### **US10 - Alertas de Manutenção Preventiva**
+> **Como administrador, desejo receber notificações referente a manutenções preventivas de viaturas.**
+
+* **Prioridade:** Baixa | **Estimativa:** 13h | **Status:** 📅
+* **DoD (Critérios de Sucesso):**
+    * Implementação dos campos de "Última Troca de Óleo" e "Próxima Troca (Km)" conforme Boletim de Tráfego.
+    * Sistema de alerta visual (ícone ou cor diferenciada) quando a quilometragem atual estiver a menos de 500km da revisão prevista.
+    * Notificação automática na tela principal do administrador ao identificar veículos com manutenção vencida.
+
+---
+
+## 🏃‍ DoR - Definition of Ready (Sprint 3) <a id="dor"></a>
+Critérios necessários para iniciar o desenvolvimento:
+
+* **Segurança**: Definição clara dos perfis de acesso (Admin vs Técnico).
+* **Backend**: Configuração do ambiente para Spring Security e geração de Tokens JWT.
+* **Regra de Manutenção**: Definição dos intervalos de quilometragem para cada tipo de serviço (Óleo, Pneus, etc.).
+* **Design**: Protótipo das telas de histórico e componentes de notificação validados.
+
+---
+
+## 🏆 Critérios de Conclusão da Sprint
+Para o fechamento da Sprint 3, a equipe deve garantir:
+* Segurança: Técnicos impedidos de acessar rotas administrativas via URL ou interface.
+* Integração: Todos os filtros de histórico e Dashboard funcionando com dados reais do Supabase.
+* Pull Requests aprovados e código consolidado na branch `main`.
+* README da Sprint atualizado com as evidências de segurança e alertas funcionais.
