@@ -8,6 +8,7 @@
 <p align="center">
   | <a href ="#desafio"> Desafio</a>  |
   <a href ="#us"> User Stories</a>  |   
+  <a href ="#dor">DoR</a>  |
 </p>
 
 > Status da Sprint: Em Andamento ⚙️
@@ -20,9 +21,9 @@ Finalizar o ecossistema do projeto com foco em segurança e governança de dados
 ---
 
 
-| Capacidade estimada da Equipe por Sprint:               | 35                                                         |
+| Capacidade estimada da Equipe por Sprint:               | 43                                                         |
 | ------------------------------------------------------- | ---------------------------------------------------------- |
-| Meta da Sprint:                                         | User Stories de rank 1 e rank 2 (Total de 33 Story Points) |
+| Meta da Sprint:                                         | User Stories de rank 1, 2, 3 e 4 Total de 43 Story Points) |
 | Previsão da Sprint (extras, sem compromisso de entrega) | —                                                          |
 
 
@@ -86,32 +87,45 @@ Para o fechamento da Sprint 3, a equipe deve garantir:
 * Integração: Todos os filtros de histórico e Dashboard funcionando com dados reais do Supabase.
 * Pull Requests aprovados e código consolidado na branch `main`.
 * README da Sprint atualizado com as evidências de segurança e alertas funcionais.
+# 🎥 Demonstração da aplicação
 
---- 
+> Clique na imagem abaixo para assistir ao vídeo no YouTube.
 
-# Tasks🛠️
+[![Vídeo da aplicação](https://img.youtube.com/vi/4Rr3indwqkA/maxresdefault.jpg)](https://www.youtube.com/watch?v=4Rr3indwqkA)
+
+# Burndown Chart
+<img width="871" height="433" alt="image" src="https://github.com/user-attachments/assets/e1317d88-a68e-4f0b-8aa1-6a770b8a6882" />
+
+
+# Tasks da sprint 🛠️
 
 ### `[Back-End]`
 
-| Chave      | Task                                                                                                                                                     | Responsável   | SP  | Status       | Prazo de Entrega | Data de Entrega                                                                                   |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | --- | ------------ | ---------------- | ------------------------------------------------------------------------------------------------- |
-| US09 - T6  | Método GET que recebe duas datas (data_inicio, data_fim) e devolve a quantidade de registros no intervalo                                                | Leandro       | 3   | Não Iniciada | 17/05            |                                                                                                   |
-| US09 - T1  | Método GET que recebe um id de viatura e devolve o consumo médio dela                                                                                    | Samuel        | 3   | Não iniciada | 17/05            |                                                                                                   |
-| US09  - T2 | Cadastro de CNH e exibição de viaturas de acordo com tipo de habilitação do tecnico                                                                      | Gabriel Rocha | 5   | Concluída✅   | 17/05            | [09/05](https://github.com/AtlazDB/Atlaz-BackEnd/commit/19ce1e5ea6094bb9be1c2994cbf6873339864e88) |
-| US08 - T3  | Não permitir inativação de tecnico/viatura durante ocorrencia                                                                                            | João          | 2   | Não iniciada | 17/05            |                                                                                                   |
-| US07- T1   | Histórico de ocorrencias para visualização dos tecnicos                                                                                                  | Gabriel Nunes | 3   | Não iniciada | 17/05            |                                                                                                   |
-| US10 - T2  | Migration para cadastro de km para troca de oleo, atualizar post e criar get para enviar para tabela de mais info de viaturas (default = após 10 mil km) | Leandro       | 3   | Não iniciada | 17/05            |                                                                                                   |
+| Chave      | Task                                                                                                                                                     | Responsável     | SP  | Status     |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --- | ---------- |
+| TT - T2    | Deploy no Render                                                                                                                                         | Leandro         | 3   | Concluída✅ |
+| US07- T1   | Histórico de ocorrencias para visualização dos tecnicos                                                                                                  | Gabriel Nunes   | 3   | Concluída✅ |
+| US08 - T3  | Não permitir inativação de tecnico/viatura durante ocorrencia                                                                                            | João            | 2   | Concluída✅ |
+| US09 - T1  | Método GET que recebe um id de viatura e devolve o consumo médio dela                                                                                    | Samuel          | 3   | Concluída✅ |
+| US09  - T2 | Cadastro de CNH e exibição de viaturas de acordo com tipo de habilitação do tecnico                                                                      | Gabriel Rocha   | 5   | Concluída✅ |
+| US09 - T5  | Método GET que recebe duas datas (data_inicio, data_fim) e devolve a quantidade de registros no intervalo                                                | Leandro         | 3   | Concluída✅ |
+| US09 - T6  | Adicionar campos na estrutura do JSON da tela de dashboard                                                                                               | Gabriel Valente | 3   | Concluída✅ |
+| US10 - T2  | Migration para cadastro de km para troca de oleo, atualizar post e criar get para enviar para tabela de mais info de viaturas (default = após 10 mil km) | Leandro         | 3   | Concluída✅ |
+| US04 - T5  | Método GET para exibir ENUM de status do usuário                                                                                                         | João            | 1   | Concluída✅ |
+
 
 
 
 ### `[Front-End]`
 
-| Chave     | Task                                                              | Responsável     | SP  | Status       | Prazo de Entrega | Data de Entrega |
-| --------- | ----------------------------------------------------------------- | --------------- | --- | ------------ | ---------------- | --------------- |
-| US08 - T1 | Melhorias na pagina de Registros (Campos para filtrar e exibição) | Leonardo        | 3   | Não iniciada | 17/05            |                 |
-| US09 - T3 | Remover opção em campo/em uso do cadastro de tecnico/viatura      | Leonardo        | 1   | Não iniciada | 17/05            |                 |
-| US07 - T2 | Histórico de ocorrencias para visualização dos tecnicos           | Maria           | 3   | Não iniciada | 17/05            |                 |
-| US07 - T3 | Refatoração nas telas de cadastro                                 | Maria           | 2   | Não iniciada | 17/05            |                 |
-| US10 - T3 | Responsividade nas telas de administrador                         | Maria           | 2   | Não iniciada | 17/05            |                 |
-| US09 - T4 | Refatoração da tela de Dashboard                                  | Gabriel Valente | 3   | Não iniciada | 17/05            |                 |
-| US10 -T1  | Tela de mais informações de veículo                               | Ryan            | 2   | Não iniciada | 17/05            |                 |
+| Chave     | Task                                                              | Responsável     | SP  | Status     |
+| --------- | ----------------------------------------------------------------- | --------------- | --- | ---------- |
+| US07 - T2 | Histórico de ocorrencias para visualização dos tecnicos           | Maria           | 3   | Concluída✅ |
+| US07 - T3 | Refatoração nas telas de cadastro                                 | Maria           | 2   | Concluída✅ |
+| US08 - T1 | Melhorias na pagina de Registros (Campos para filtrar e exibição) | Leonardo        | 3   | Concluída✅ |
+| US09 - T4 | Refatoração da tela de Dashboard                                  | Gabriel Valente | 3   | Concluída✅ |
+| US10 -T1  | Tela de mais informações de veículo                               | Ryan            | 2   | Concluída✅ |
+| US10 - T3 | Responsividade nas telas de administrador                         | Maria           | 2   | Concluída✅ |
+| US09 - T7 | Cadastro de CNH no Front end                                      | Leonardo        | 1   | Concluída✅ |
+| US04 - T4 | Fix: Remover opção 'em campo' do cadastro de técnico              | Leonardo        | 1   | Concluída✅ |
+
